@@ -1,4 +1,8 @@
 <?php
+function new_excerpt_more( $more ) {
+	return ' ...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 add_action('after_setup_theme', 'blankslate_setup');
 function blankslate_setup(){
 load_theme_textdomain('blankslate', get_template_directory() . '/languages');
@@ -6,9 +10,12 @@ add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
 global $content_width;
 if ( ! isset( $content_width ) ) $content_width = 640;
-register_nav_menus(
-array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
-);
+
+register_nav_menus(array(
+	'navigation_menu' => 'CASP Header Navigation Menu'
+));
+
+
 }
 add_action('comment_form_before', 'blankslate_enqueue_comment_reply_script');
 function blankslate_enqueue_comment_reply_script()
@@ -39,6 +46,9 @@ $args['title_reply_to'] = __('Post a Reply to %s', 'blankslate');
 return $args;
 }
 add_action( 'init', 'blankslate_add_shortcodes' );
+function get_key($name) {
+	return strtolower(preg_replace('/[^\-A-Za-z0-9]/i','',str_replace(' ','-',$name)));
+}
 function blankslate_add_shortcodes() {
 add_shortcode('wp_caption', 'fixed_img_caption_shortcode');
 add_shortcode('caption', 'fixed_img_caption_shortcode');
