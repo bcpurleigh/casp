@@ -7,7 +7,7 @@
 		<?= category_description(); ?>
 		</div>
 		<? endif; ?>
-		<div class="columns">
+		<div class="columns clearfix">
 			<div class="upcoming column">
 				<? $upcoming = new WP_Query('category_name=conferences&post_status=future&order=ASC'); ?>
 				<h3 class="conference-title">Upcoming</h3>

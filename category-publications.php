@@ -8,7 +8,7 @@
 		<?= category_description(); ?>
 		</div>
 		<? endif; ?>
-		<div class="columns">
+		<div class="columns clearfix">
 			<div class="column">
 				<? $i=0; while (have_posts()): the_post(); if ($i++%2 == 0): ?>
 				<? get_template_part( 'entry' ); ?>
