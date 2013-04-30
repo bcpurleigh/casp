@@ -9,6 +9,7 @@
     </div>
     <div class="contact block">
       <h3>Contact</h3>
+      <?= do_shortcode('[contact]') ?>
     </div>
   </div>
   <div class="copyright container">

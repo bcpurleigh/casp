@@ -23,7 +23,7 @@
 				</div>
 				<? endforeach; ?>
 			</div>
-			<a class="btn right-arrow go-to">Go to <?= $category->name ?></a>
+			<a href="<?= get_category_link( $category->term_id ) ?>" class="btn right-arrow go-to">Go to <?= $category->name ?></a>
 		</div>
 		<? endif; ?>
 	<? endforeach; ?>

@@ -388,6 +388,7 @@ footer h3 {
 
 footer p {
     margin: 0;
+    font-size:12px;
     margin-bottom:20px;
     line-height:1.5;
 }
@@ -399,6 +400,10 @@ footer .container {
 footer .block {
     float:left;
     margin-right:40px;
+}
+
+footer .container .block:last-child {
+    margin-right:0;
 }
 
 footer .about.block {
@@ -707,7 +712,7 @@ h3.conference-title {
     font-size: 12px;
 }
 
-.single .columns .post.column img {
+.single .columns .post.column .post-image {
     float:left;
     margin-right:20px;
     width:283px;
@@ -766,6 +771,83 @@ h3.conference-title {
     font-size:18px;
     margin: 8px 0;
     font-family: 'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;   
+}
+
+.post-footer {
+    margin:30px 0;
+    background: #e7e7e7;
+    padding:15px;
+}
+
+.post .post-social {
+    float:right;
+}
+
+.post .post-social .service {
+    float:left;
+    margin-right:5px;
+    height:20px;
+}
+
+.post .post-social .service.twitter {
+    width:56px;
+}
+
+.post .post-categories {
+    font-size:11px;
+    margin: 30px 0;
+}
+
+.post .post-categories a:after {
+    content:',';
+    color: #000;
+}
+
+.post .post-categories a:last-child:after {
+    display:none;
+}
+
+.sscf-input-wrapper label {
+    width: 90px;
+    float: left;
+    font-family: 'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.sscf-input-wrapper textarea,
+.sscf-input-wrapper input {
+    background: #e7e7e7;
+    border: 0;
+    padding: 10px;
+}
+
+.sscf-input-wrapper input {
+    width: 260px !important;
+}
+
+.sscf-input-wrapper textarea {
+    width: 320px !important;
+    max-height:300px;
+}
+
+#sscf-submit-wrapper input {
+    padding: 10px;
+    background-color: #cd2727;
+    margin-left: 100px;
+    color: #FFF;
+    border: 0;
+    font-size: 16px;
+    font-weight: normal !important;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    background-image: url(../images/btn-arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 45px;
+    -webkit-appearance: none;
 }
 
 .ir {
