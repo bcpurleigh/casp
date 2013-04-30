@@ -21,6 +21,7 @@
 				<? endif; endwhile; ?>
 			</div>
 		</div>
+		<? get_template_part('nav', 'below') ?>
 	</div>
 </div>
 <?php get_footer(); ?>

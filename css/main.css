@@ -74,6 +74,20 @@ a:hover {
     color:#db4343;
 }
 
+.navigation {
+    padding-top:49px;
+    margin-bottom:-49px;
+}
+
+.navigation .nav a:hover,
+.navigation .nav a {
+    color:#FFF;
+}
+
+.navigation .nav.next {
+    float:right;
+}
+
 .btn {
     padding:10px;
     background-color: #cd2727;
@@ -90,6 +104,13 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center right;
     padding-right: 45px;
+}
+
+.btn.left-arrow {
+    background-image:url(../images/btn-arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 45px;
 }
 
 .btn:hover {
@@ -560,6 +581,14 @@ h2 {
     background: url(../images/post-bottom.png) repeat-x bottom left;
 }
 
+.conferences .column.past .post:last-of-type,
+.working-paper-series .column .post:last-of-type,
+.publications .column .post:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-image: none;
+}
+
 .conferences .column.upcoming .post {
     margin-bottom:40px;
 }
@@ -692,6 +721,7 @@ h3.conference-title {
 .single .columns .prev.column,
 .single .columns .next.column {
     width:142px;
+    min-height: 10px;
 }
 
 .single .columns .prev.column img,
