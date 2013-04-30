@@ -24,5 +24,17 @@
 		<h1><? single_cat_title(); ?></h1>
 	</div>
 	<?php rewind_posts(); ?>
+<? elseif (is_page()): ?>
+	<?php the_post(); ?>
+	<? $key = get_key(get_the_title()); ?>
+	<div class="category banner <?= $key ?>">
+	<div class="container">
+		<h1><? the_title(); ?></h1>
+	</div>
+<? elseif (is_single()): ?>
+	<div class="category banner post">
+	<div class="container">
+		<h1>Blog</h1>
+	</div>
 <? endif; ?>
 </div>

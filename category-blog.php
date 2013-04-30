@@ -1,12 +1,18 @@
 <? get_header(); ?>
-<div class="container">
+<? $per_col = ceil($wp_query->post_count / 4); ?>
+<div class="blog container">
 	<div class="content">
-		<div class=" clearfix">
+		<? if (category_description() != ""): ?>
+		<div class="category-description">
+		<?= category_description(); ?>
+		</div>
+		<? endif; ?>
+		<div class="columns clearfix">
 		<? $i = 0; ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-		<? if ($i%2 == 0): ?><div class="column"><? endif; ?>
+		<? if ($i%$per_col == 0): ?><div class="column"><? endif; ?>
 		<?php get_template_part( 'entry' ); ?>
-		<? if ($i%2 == 1): ?></div><? endif; ?>
+		<? if ($i%$per_col == $per_col-1): ?></div><? endif; ?>
 		<? $i++; ?>
 		<?php endwhile; ?>
 		</div>

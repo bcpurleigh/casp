@@ -1,7 +1,12 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<? if (is_singular()): ?>
-	<? get_template_part('entry','single'); ?>
+<?= has_post_thumbnail() ? get_the_post_thumbnail(get_the_id(), array(280,280)) : ''; ?>
+<h2 class="post-title"><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h2>
+<div class="posted">
+	<? the_time('F j, Y'); ?><? if (is_single()): ?> | Posted by <? the_author(); ?><? endif; ?>
+</div>
+<? if (is_single()): ?>
+<div class="post-content"><? the_content(); ?></div>
 <? else: ?>
-	<? get_template_part('entry','list'); ?>
+<div class="post-excerpt"><? the_excerpt(); ?></div>
 <? endif; ?>
 </div>
