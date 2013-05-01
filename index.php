@@ -27,6 +27,45 @@
 		</div>
 		<? endif; ?>
 	<? endforeach; ?>
+
+	<? require('retrieve.php'); ?>
+	<? $bn = retrieve_bn(); $journal = retrieve_journal(); ?>
+
+	<? if (count($bn) > 0): ?>
+	<div class="block">
+		<h3 class="bn-archives">
+			<a href="http://www.bnarchives.net/">BN Archives</a>
+		</h3>
+		<div class="posts">
+			<? $i = 0; ?>
+			<? foreach ($bn as $b): ?>
+			<div class="post">
+				<h2><a href="<?= $b['href'] ?>"><?= $b['title'] ?></a></h2>
+			</div>
+			<? if ($i++ > 4) break; ?>
+			<? endforeach; ?>
+		</div>
+		<a href="http://www.bnarchives.net/" class="btn right-arrow go-to">Go to BN Archives</a>
+	</div>
+	<? endif; ?>
+
+	<? if (count($journal) > 0): ?>
+	<div class="block">
+		<h3 class="recasp-journal">
+			<a href="http://www.uow.edu.au/arts/research/recasp/articles/index.html">RECASP Journal</a>
+		</h3>
+		<div class="posts">
+			<? foreach ($journal as $j): ?>
+			<div class="post">
+				<h2><a href="<?= $j['href'] ?>"><?= $j['title'] ?></a></h2>
+				<p><?= $j['desc']; ?></p>
+			</div>
+			<? endforeach; ?>
+		</div>
+		<a href="http://www.uow.edu.au/arts/research/recasp/articles/index.html" class="btn right-arrow go-to">Go to RECASP Journal</a>
+	</div>
+	<? endif; ?>
+
 	</div>
 </div>
 

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><script language="JavaScript">
+   var _U = "undefined";
+   var g_HttpRelativeWebRoot = "/content/";
+   var SSContributor = false;
+   var SSForceContributor = false;
+   var SSHideContributorUI = false;
+   var ssUrlPrefix   = "/";
+   var g_navNode_Path = new Array();
+       g_navNode_Path[0] = '1';
+       g_navNode_Path[1] = '1743';
+       g_navNode_Path[2] = '1757';
+       g_navNode_Path[3] = '13572';
+       g_navNode_Path[4] = '14038';
+   var g_ssSourceNodeId = "14038";
+   var g_ssSourceSiteId = "UOW_Main";
+   var g_strLanguageId = "en";
+</script>
+<script type="text/javascript" src="/content/resources/wcm/sitestudio/wcm.toggle.js"></script>
+
+<title> Articles @ UOW</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="/content/groups/webasset/@web/documents/siteelement/css_uow_font.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/content/groups/webasset/@web/documents/siteelement/css_uow_responsive.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/content/groups/webasset/@web/documents/siteelement/css_uow_colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/content/groups/webasset/@web/documents/siteelement/css_print.css" rel="stylesheet" type="text/css" media="print" />
+<script type="text/javascript" src="/content/groups/webasset/@web/documents/siteelement/js_jquery.js"></script>
+<!--[if IE 8]><link href="/content/groups/webasset/@web/documents/siteelement/css_uow_responsive_ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+<!--[if lte IE 7]>
+<link href="/content/groups/webasset/@web/documents/siteelement/css_uow_responsive_ie7.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="/content/groups/webasset/@web/documents/siteelement/js_jquery_plugin_sspng.js"></script>
+<script type="text/javascript"> 
+$("body").fixPng();
+</script>
+<![endif]-->
+ 
+<!--[if IE 8]><link href="/content/groups/webasset/@web/documents/siteelement/css_uow_responsive_home_ie8.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+<!--[if lte IE 8]>
+	<script type="text/javascript" src="/content/groups/webasset/@web/documents/siteelement/js_jquery_plugin_clearinput.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#uow-search').val('SEARCH').clearingInput();
+			$('#site-q').val('SEARCH').clearingInput();
+		});
+	</script>
+<![endif]-->
+<script type="text/javascript" src="/content/groups/webasset/@web/documents/siteelement/js_jquery_plugin_cycle.js"></script>
+<script type="text/javascript" src="/content/groups/webasset/@web/documents/siteelement/js_jquery_plugin_colorbox.js"></script>
+<script type="text/javascript" src="/content/groups/webasset/@web/documents/siteelement/js_jquery_plugin_tools.js"></script>
+<script type="text/javascript" src="/content/groups/webasset/@web/documents/siteelement/js_jquery_plugin_validate.js"></script>
+<script type="text/javascript" src="/content/groups/webasset/@web/documents/siteelement/js_uow_default.js"></script>
+<script type="text/javascript" src="/content/groups/webasset/@web/documents/siteelement/js_uow_search.js"></script>
+<script type="text/javascript" src="http://www.uow.edu.au/server/ga.js"></script>
+			
+
+ 
+<meta name="dc.date.created" scheme="ISO8601" content="2012-08-17" />
+<meta name="dc.docname" content="UOW132039">
+<meta name="dc.lastreview" content="12 September, 2012">
+<meta name="dc.date.modified" scheme="ISO8601" content="2012-09-12" />
+<meta name="dc.title" content="Articles" />
+<meta name="dc.contributor" content="tdimuzio" />
+<meta name="dc.account" content="web/arts/recasp" />
+<meta name="dc.type.documentType" content="WEB" />
+<meta name="dc.format" scheme="IMT" content="text/html" />
+<meta name="dc.language" content="en-au" />
+<meta name="dc.description" content="The 1%, Exploitation and Wealth:Tim Di Muzio interviews Shimshon Bichler and Jonathan Nitzan">
+
+</head> 
+<body class="uow">
+<a href="#main-content" class="hidden">Skip navigation</a>
+	<div id="mobile-header" class="mobile container">
+	<div id="mobile-logo" class="grid_7"><a href="/index.html"><img src="/content/groups/webasset/@web/documents/siteelement/img_uow_mobile_logo.png" alt="UOW Logo" title="UOW Logo" /></a></div><div class="grid_5 text-right">
+	<a class="toggle right" id="toggle"></a><a id="search-toggle" class="toggle right"></a></div>
+</div>
+<div id="header">
+	<div class="container">
+	<div id="logo" class="grid_4"><a href="/index.html" ><img src="/content/groups/webasset/@web/documents/siteelement/img_uow_logo.png" alt="University of Wollongong" title="University of Wollongong" /></a></div><div class="right grid_5" id="search">
+	<form class="search" action="http://search.uow.edu.au/search" method="get">
+		<input type="text" name="q" class="search-input" title="Search UOW" id="uow-search" placeholder="SEARCH">
+		<input type="submit" class="search-button" value="Search" id="search-button">
+		<input type="hidden" name="client" value="default_frontend">
+		<input type="hidden" name="output" value="xml_no_dtd">
+		<input type="hidden" name="proxystylesheet" value="default_frontend"> 
+		<input type="hidden" name="site" value="default_collection">
+		<br>
+		<input type="radio" checked="checked" value="" name="sitesearch" id="all"/>
+		<label for="all">All UOW</label>
+		<input type="radio" value="www.uow.edu.au/arts/research/recasp/articles/" name="sitesearch" id="site"/>
+		<label for="site">
+			Review of Capital as...
+		</label>
+	</form></div>
+	<div id="toplinks">
+		<div class="text-center left"><a href="/directory/atoz/index.html" >A to Z</a></div><div class="text-center left"><a href="/about/campusmap/index.html">Campus Map</a></div><div class="text-center left"><a href="https://intranet.uow.edu.au">Staff Intranet</a></div><div class="text-center left"><a href="/about/contacts/index.html">Contacts</a></div>
+	</div>
+	<select id="toplinks-select" title="Top Links" class="grid_4 box">
+		<option selected="selected">Quick Links</option>
+		<option value="/directory/atoz/index.html">A to Z</option>
+		<option value="/about/campusmap/index.html">Campus Map</option>
+		<option value="https://intranet.uow.edu.au/">Staff Intranet</option>
+		<option value="/about/contacts/index.html">Contacts</option>
+	</select>
+</div>
+	<div id="megamenu-wrap">
+		<div class="container">
+		<div id="megamenu" class="grid_12" >
+          	
+<div><a href="/future/index.html" class="mainmenu alpha" >Future Students</a><ul class="alpha">
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/future/home');" href="/future/index.html">Future Students Home</a></li>
+<li><a href="/future/international/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/future/international');">International Students</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/future/highschool');" href="/future/school/index.html">High School Students</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/future/postgrad');" href="/future/postgrad/index.html">Postgrad Students</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/future/direct');" href="/future/mature/index.html">Mature Age Students</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/future/accommodation');" href="/about/accommodation/index.html">Accommodation</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/scholarships/mature');" href="/about/scholarships/index.html">Scholarships</a></li>
+</ul></div><div><a href="/student/index.html" class="mainmenu">Current Students</a><ul>
+<li><a href="/student/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/student/home');">Current Students Home</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/student/timetables');" href="/student/timetables/index.html">Timetables</a></li>
+<li><a href="/student/dates/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/student/dates');">Session Dates</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/student/it');" href="/its/index.html">IT Services</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/student/graduation');" href="/student/graduation/index.html">Graduation</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/student/scholarships');" href="/about/scholarships/index.html">Scholarships</a></li>
+<li><a href="/student/finances/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/student/fees');">Fees</a></li>
+</ul></div><div><a href="/research/index.html" class="mainmenu">Research &amp; Innovation</a><ul>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/research/home');" href="/research/index.html">Research Home</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/research/strengths');" href="/research/strengths/index.html">Research Strengths</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/research/rsc');" href="/research/rsc/index.html">Research Student Centre</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/research/rso');" href="/research/rso/index.html">Research Services Office</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/research/commercial');" href="/research/icr/index.html">Innovation &amp; Commercial Research</a></li>
+<li><a href="http://ro.uow.edu.au">UOW Publications</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/research/grants');" href="/research/researchgrants/index.html">Grants</a></li>
+</ul></div><div><a href="/alumni/index.html" class="mainmenu">Alumni</a><ul>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/alumni/home');" href="/alumni/index.html">Alumni Home</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/alumni/update-details');" href="/alumni/new-contact/index.html">Update Your Details</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/alumni/profiles');" href="/alumni/alumnistories/index.html">Alumni Profiles</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/alumni/benefits');" href="/alumni/benefits/index.html">Benefits Programs</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/alumni/faqs');" href="/alumni/faq/index.html">Alumni FAQs</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/alumni/bookshop');" href="/alumni/bookshop/index.html">Alumni Bookshop</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('/internal-links/mega-menu/alumni/events');" href="/alumni/alumnievents/index.html">Alumni Events</a></li>
+</ul></div><div><a href="/engage/index.html" class="mainmenu">Business &amp; Community</a><ul>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/business-community/business-home');" href="/engage/index.html">Business Home</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/business-community/community-home');" href="/about/community/index.html">Community Home</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/business-community/newsletters');" href="/about/community/newsletters/index.html">Community Newsletter</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/business-community/grants');" href="/about/community/cegs/index.html">Engagement Grants</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/business-community/tours');" href="/about/community/tours/index.html">Campus Tours</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/business-community/work-with-uow');" href="/engage/workwithuow/index.html">Working with UOW</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/business-community/international-partnerships');" href="/engage/international/index.html">International Partnerships</a></li>
+</ul></div><div><a href="http://media.uow.edu.au/index.html?ssSourceSiteId=UOW_Main" class="mainmenu omega">News &amp; Media</a><ul>
+<li><a href="http://media.uow.edu.au/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/news-media/home');">News & Media Home</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/news-media/latest');" href="http://media.uow.edu.au/news/index.html?ssSourceSiteId=UOW_Main">Latest News</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/news-media/media-release');" href="http://media.uow.edu.au/releases/index.html?ssSourceSiteId=UOW_Main">Media Releases</a></li>
+<li><a href="http://www.skills.itc.com.au/" onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/news-media/database-expertise');">Database of Expertise</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/news-media/contact');" href="http://media.uow.edu.au/contact/index.html?ssSourceSiteId=UOW_Main">Contact Media</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/mega-menu/news-media/subscribe');" href="http://media.uow.edu.au/newsdirect/index.html?ssSourceSiteId=UOW_Main">Subscribe</a></li>
+</ul></div>
+
+           
+           <div class="mobile submenu">
+           	<div>About UOW</div>
+           	<ul class="mobile">
+				<li><a href="/about/index.html">About UOW</a></li>
+				<li><a href="/about/faculties/index.html">Faculties</a></li>
+				<li><a href="/services/index.html">Facilities &amp; Services</a></li>
+				<li><a href="/directory/atoz/index.html">A to Z</a></li>
+				<li><a href="/about/campusmap/index.html">Campus Map</a></li>
+				<li><a href="https://intranet.uow.edu.au/">Staff Intranet</a></li>
+				<li><a href="/about/contacts/index.html">Contacts</a></li>
+				<li><a href="/about/faculties/index.html">Library</a></li>
+			</ul>
+           </div>
+		</div></div>
+	</div>
+	<div id="submenu-wrap">
+		<div class="container">
+		<div id="submenu" class="grid_12">
+			<div class="connect"><div>Visionary / Dynamic / Passionate Connect: UOW</div></div><div class="submenu"><div>About UOW</div>
+          	
+<ul>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/about-menu/abouthome');" href="/about/index.html">About UOW Home</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/about-menu/library');" href="http://www.library.uow.edu.au/index.html?ssSourceSiteId=UOW_Main">Library</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/about-menu/getting-to-uow');" href="/transport/index.html">Getting to UOW</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/about-menu/campuses');" href="/about/campuses/index.html">Campuses</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/about-menu/learning-teaching');" href="/about/teaching/index.html">Learning &amp; Teaching</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/about-menu/accommodation');" href="/about/accommodation/index.html">Accommodation</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/about-menu/policy-directory');" href="/about/policy/index.html">Policy Directory</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/about-menu/environment');" href="/about/environment/index.html">Environment</a></li>
+</ul>
+
+
+          </div><div class="submenu faculties"><div>Faculties</div>
+          	
+<ul>
+<li><a href="ssNODELINK/3174" target="">All Faculties &amp; Schools</a></li>
+<li><a href="/arts/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/arts');">Faculty of Arts</a></li>
+<li><a href="/commerce/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/commerce');">Faculty of Commerce</a></li>
+<li><a href="/crearts/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/creative-arts');">Faculty of Creative Arts</a></li>
+<li><a href="/educ/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/education');">Faculty of Education</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/engineering');" href="/eng/index.html">Faculty of Engineering</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/hbs');" href="/health/index.html">Faculty of Health&nbsp;&amp; Behavioural Sciences</a></li>
+<li><a href="/informatics/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/informatics');">Faculty of Informatics</a></li>
+<li><a href="/law/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/law');">Faculty of Law</a></li>
+<li><a href="/science/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/science');">Faculty of Science</a></li>
+<li><a href="/gsm/index.html" onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/gsm');">Graduate School of Medicine</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/ihmri');" href="http://ihmri.uow.edu.au/index.html?ssSourceSiteId=UOW_Main">IHMRI</a></li>
+<li><a href="http://smart.uow.edu.au/index.html?ssSourceSiteId=UOW_Main" onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/smart');">SMART Infrastructure Facility</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/faculties-menu/sbs');" href="/business/index.html">Sydney Business School</a></li>
+</ul>
+
+
+          </div><div class="submenu omega"><div><a href="/services/index.html">Services</a></div></div>
+		</div>
+		</div>
+	</div>
+</div>
+	<div id="wrap" class="container">
+		<h1 class="grid_12 box" id="page-title">Review of Capital as Power (RECASP)</h1>
+		<div class="grid_12" id="breadcrumb"><a href="/index.html">Home</a>
+> <a href="/arts/index.html">Faculty of Arts</a>
+> <a href="/arts/research/index.html">Research Overview</a>
+> <a href="/arts/research/recasp/index.html">Review of Capital as Power (RECASP)</a>
+> Articles
+</div>
+		<div id="content" class="clearfix">
+					<div class="grid_6 push_3" id="main-content">
+
+
+	
+	<div class="box">
+		
+	
+	<h1>Articles</h1><h3>&nbsp;</h3><h3>Vol. 1, No. 1 2012&nbsp;</h3><p><a target="" href="/content/groups/public/@web/@arts/@recasp/documents/doc/uow133792.pdf">The 1%, Exploitation and Wealth:</a><br />Tim Di Muzio interviews Shimshon Bichler and Jonathan Nitzan</p>
+	<div class="lastreviewed text-right">Last reviewed: 12 September, 2012</div>
+	</div>
+	
+</div>
+	<div class="grid_3 box pull_6" id="navigation">
+	
+	
+				
+				<div class="nav open">
+				<div class="category">About RECASP</div>
+				<ul>
+			<li><a href="/arts/research/recasp/purpose/index.html" target="_self">Statement of Purpose</a></li>
+				<li><a href="/arts/research/recasp/board/index.html" target="_self">Advisory Board</a></li>
+				<li><a href="/arts/research/recasp/contribution/index.html" target="_self">Contribution Guidelines</a></li>
+				<li><a href="/arts/research/recasp/style/index.html" target="_self">Style Guidelines</a></li>
+				<li><a href="/arts/research/recasp/specialissues/index.html" target="_self">Special Issues</a></li>
+				<li><a href="/arts/research/recasp/reviewprocess/index.html" target="_self">Review Process</a></li>
+				<li><a href="/arts/research/recasp/articles/index.html" target="_self">Articles</a></li>
+		
+	</ul></div>
+		<div id="left-promo">
+	
+	
+		</div>
+	</div>
+ 
+<div class="grid_3" id="promo">
+	 
+	
+	
+<div class="box"><h1 class="steel-heading">News &amp; Events</h1><p>Coming soon from Routledge - a new edited collection: The Capitalist Mode of Power: Engagements with the Power Theory of Value.&nbsp;(London and New York: Routledge).&nbsp;Forthcoming, 2013.</p></div>
+<div class="box"><h1 class="steel-heading">Upcoming conference</h1><p><b>Call for papers on the subject of 'Capital as&nbsp;Power'</b><br /><i>Nitzan, Jonathan and Bichler, Shimshon and DiMuzio, Tim (2013). <br />Paper panels for the Rethinking Marxism Conference to be held<br />September&nbsp;19 - 22, 2013.&nbsp;University of Massachusetts Amherst<br /><br /></i>View&nbsp;full <a target="" href="http://bnarchives.yorku.ca/353/03/20130100_bn_cap_at_rm2013_cfp.pdf">call for papers</a></p></div>
+
+</div>
+		</div>
+	</div>
+<div id="footerwrap" >
+	<div id="footer" class="container">
+		<div class="grid_3"><h6>UNIVERSITY OF WOLLONGONG</h6>
+			<p>Wollongong NSW 2522<br>
+			Australia</p>
+			<p>Phone: 1300 367 869<br>
+			International: +61 2 4221 3218<br>
+			Switchboard: +61 2 4221 3555</p>
+			<a href="/about/awards/index.html" class="solid silver" >Awards &amp; Rankings</a>
+		</div> 
+		<div class="grid_3"><h6>LINKS</h6>
+    			
+<ul>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/timetables');" href="/student/timetables/index.html">Timetables</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/course-handbook');" href="/handbook/index.html">Course Handbook</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/session-dates');" href="/student/dates/index.html">Session Dates</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/student-it-support');" href="/student/it/index.html">Student IT Support</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/campus-map');" href="/about/campusmap/index.html">Campus Map</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/enrolment');" href="/student/exams/index.html">Exams</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/unishop');" href="http://unishop.uow.edu.au/">UniShop</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/orientation');" href="/student/graduation/index.html">Graduation</a></li>
+</ul>
+
+
+		</div>
+		<div class="grid_3"><h6>SERVICES</h6>
+    			
+<ul>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/library');" href="http://www.library.uow.edu.au/index.html?ssSourceSiteId=UOW_Main">Library</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/employment');" href="http://employment.uow.edu.au/index.html?ssSourceSiteId=UOW_Main">Employment at UOW</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/its');" href="/its/index.html">Information Technology Services</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/security-and-safety');" href="/about/security/index.html">Security &amp; Safety</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/urac');" href="http://www.urac.com.au/">Recreation &amp; Aquatic</a></li>
+<li><a onClick="javascript: pageTracker._trackPageview('internal-links/footer/unicentre');" href="ssNODELINK/3207">UniCentre</a></li>
+<li><a href="http://www.itcltd.com.au/" onClick="javascript: pageTracker._trackPageview('internal-links/footer/itc');">ITC Limited</a></li>
+<li><a href="http://www.innovationcampus.com.au/" onClick="javascript: pageTracker._trackPageview('internal-links/footer/innovation-campus');">Innovation Campus</a></li>
+</ul>
+
+
+		</div>
+		<div class="grid_3 omega"><h6>CONNECT:SOCIAL</h6>
+			<ul>
+				<li><a href="http://now.uow.edu.au/connect/socialmedia/index.html?ssSourceSiteId=UOW_Main" class="social" >&nbsp;</a></li>
+				<li><a href="/about/contacts/ask/index.html" class="solid" >Ask a Question</a></li>
+				<li><a href="http://now.uow.edu.au/index.html?ssSourceSiteId=UOW_Main" class="solid" >Events</a></li>
+			</ul>
+		</div>
+		<div class="container left text-center"> Copyright &copy; <span id="copyright-year">2013</span>&nbsp;University of Wollongong. CRICOS Provider No: 00102E | <a href="http://www.uow.edu.au/about/privacy/index.html">Privacy</a> | <a href="http://www.uow.edu.au/about/disclaimer/index.html">Disclaimer &amp; Copyright Info</a> | <a href="http://www.uow.edu.au/about/brand/web/index.html">Website Information</a> | <a href="http://www.uow.edu.au/sitemap/index.html">Site Map</a></div>
+	</div>
+</div>
+<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-4147908-1");
+	pageTracker._initData();
+	pageTracker._trackPageview();
+</script>
+			
+</body>
+</html>

@@ -1,4 +1,4 @@
-<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 <?= has_post_thumbnail() ? get_the_post_thumbnail(get_the_id(), array(280,280), array('class' => 'post-image')) : ''; ?>
 <h2 class="post-title"><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h2>
 <div class="posted">
@@ -6,6 +6,11 @@
 </div>
 <? if (is_single()): ?>
 <div class="post-content"><? the_content(); ?></div>
+<? else: ?>
+<div class="post-excerpt"><? the_excerpt(); ?></div>
+<? endif; ?>
+</div>
+<? if (is_single()): ?>
 <? $categories = get_the_category(); ?>
 <? if ($categories): ?>
 <div class="post-categories">
@@ -34,7 +39,4 @@ Posted in:
 <div class="post-comments">
 <?php comments_template('', true); ?>
 </div>
-<? else: ?>
-<div class="post-excerpt"><? the_excerpt(); ?></div>
 <? endif; ?>
-</div>

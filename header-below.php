@@ -11,7 +11,9 @@
 	<? $i = 0; ?>
 	<? foreach ($posts as $post): setup_postdata($post); ?>
 		<? if (has_post_thumbnail()): ?>
-		<div id="slider-slide-<?= $i++; ?>" class="slide" style="background-image:url(<?= wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'full')[0] ?>);">
+		<? $bg = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'full'); ?>
+		<? $bg = $bg[0]; ?>
+		<div id="slider-slide-<?= $i++; ?>" class="slide" style="background-image:url(<?= $bg ?>);">
 			<h2><? the_title(); ?></h2>
 			<a href="<? the_permalink(); ?>" class="btn right-arrow">Read More</a>
 		</div>
