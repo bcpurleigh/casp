@@ -4,7 +4,7 @@
   <div class="container clearfix">
     <div class="about block">
       <? $about = get_page_by_title('about'); ?>
-      <h3>About</h3>
+      <h3 class="about-title"><a href="<?= get_permalink($about); ?>">About</a></h3>
       <p><?= nl2br($about->post_content); ?></p>
     </div>
     <div class="contact block">

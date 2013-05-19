@@ -5,11 +5,9 @@ require 'phpquery/phpquery.php';
 function get_doc($url) {
 	try {
 		$fn = dirname(__FILE__) . "/cache/" . md5($url) . "-" . mktime(0,0,0) . ".tmp";
-		var_dump($fn);
 		if (file_exists($fn)) {
-			return file_get_contents($fn);
+			return phpQuery::newDocument(file_get_contents($fn));
 		} else {
-			var_dump("here");
 			$data = file_get_contents($url);
 			file_put_contents($fn, $data);
 			return phpQuery::newDocument($data);
@@ -59,5 +57,31 @@ function retrieve_bn() {
 	}
 	return $arr;
 }
+
+function retrieve_forum() {
+
+	$url = "http://164.177.158.37/caspbb/feed.php";
+	$contents = file_get_contents($url);
+	$xml = new SimpleXMLElement($contents);
+
+	$arr = array();
+	if ($xml) {
+		foreach($xml->entry as $entry) {
+			$desc = strip_tags($entry->content,'<p>');
+			$posted = strtotime($entry->updated);
+			$posted = date('F j, Y', $posted);
+
+			$arr[] = array(
+				'title' => htmlspecialchars($entry->title),
+				'href' => $entry->link['href'],
+				'posted' => $posted,
+				'desc' => $desc
+			);
+		}
+	}
+	return $arr;
+}
+
+retrieve_forum();
 
 ?>

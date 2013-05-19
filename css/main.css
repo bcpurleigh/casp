@@ -7,6 +7,24 @@ textarea {
     font-family:'Helvetica Neue', Arial, sans-serif;
 }
 
+input {
+    -webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+#wrap {
+    width:1000px;
+    padding:0 !important;
+    margin:auto;
+    margin-bottom: 80px;
+}
+
+#brand {
+    float:left;
+}
+
 html, body {
     -webkit-font-smoothing: antialiased;
     min-height:100%;
@@ -48,12 +66,17 @@ h3 {
 h4 {
     text-transform:uppercase;
     display:inline-block;
-    font-family:'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;
+    font-family:'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif !important;
     font-size:14.56px;
 }
 
 h1 img {
     vertical-align:top;
+}
+
+h1 a,
+h1 a:hover {
+    color: #FFF;
 }
 
 ul {
@@ -202,6 +225,13 @@ textarea {
     background-size: cover;
 }
 
+.category.banner.blog { background-image:url(../images/banners/blog.png); }
+.category.banner.events { background-image:url(../images/banners/events.png); }
+.category.banner.data-sharing { background-image:url(../images/banners/data-sharing.png); }
+.category.banner.forum { background-image:url(../images/banners/forum.png); }
+.category.banner.publications { background-image:url(../images/banners/publications.png); }
+.category.banner.working-paper-series { background-image:url(../images/banners/working-paper-series.png); }
+
 .banner h1 {
     color:#FFF;
     font-size:60.29px;
@@ -272,6 +302,7 @@ textarea {
 .slide.active .btn,
 .slide.active {
     opacity:1;
+    z-index:6000;
 }
 
 .slide h2,
@@ -297,7 +328,6 @@ textarea {
     font-size:30px;
     padding:9px 19px;
     color:#FFF;
-    max-width:25%;
     background:rgba(0,0,0,.8);
     font-weight:normal;
     font-family:'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;
@@ -311,7 +341,7 @@ header {
 
 header a,
 header a:hover {
-    color:#FFF;
+    color:#FFF !important;
 }
 
 header .brand {
@@ -346,8 +376,8 @@ header nav li {
 header nav a {
     display:block;
     margin-top:10px;
-    margin-right:6px;
-    padding-right:5px;
+    margin-right:9px;
+    padding-right:8px;
     border-right:solid 1px #FFF;
     font-size:14.56px;
     text-transform:uppercase;
@@ -481,6 +511,16 @@ footer .copyright a { color: #FFF; }
     padding-left: 43px;
 }
 
+#masonry .block h3.recasp-journal {
+    background-image:url(../images/icons/recasp-journal.png);
+    padding-left: 51px;
+}
+
+#masonry .block h3.critical-mass-forum {
+    background-image:url(../images/icons/critical-mass-forum.png);
+    padding-left: 51px;
+}
+
 #masonry .block h3 a {
     color:#FFF;
 }
@@ -547,7 +587,8 @@ h2 {
     margin-bottom:0;
 }
 
-.blog .columns .column:first-child {
+.blog .columns .column:first-child,
+.blog .columns .column:nth-child(4n+1) {
     margin-left:0;
 }
 
@@ -590,7 +631,15 @@ h2 {
 }
 
 .conferences .column.upcoming .post {
-    margin-bottom:40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    background: url(../images/post-bottom.png) repeat-x bottom left;
+}
+
+.conferences .column.upcoming .post:last-of-type {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background: none;
 }
 
 .conferences .column.upcoming .post img {
@@ -770,9 +819,12 @@ h3.conference-title {
     margin:30px 0;
 }
 
+.post-read-more {
+    font-size:0.8em;
+}
+
 .single .columns .post.column .post-content img {
-    width:auto;
-    max-width:100%;
+    width:100%;
     height:auto;
     display:block;
     margin:30px auto;
@@ -840,6 +892,10 @@ h3.conference-title {
 
 .post .post-categories a:last-child:after {
     display:none;
+}
+
+footer .sscf-wrapper label {
+    color: #FFF !important;
 }
 
 .sscf-input-wrapper label {

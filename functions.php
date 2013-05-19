@@ -1,6 +1,7 @@
 <?php
 function new_excerpt_more( $more ) {
-	return ' ...';
+	global $post;
+	return ' ... <a class="post-read-more" href="'.get_permalink($post->ID).'">Read More</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 add_action('after_setup_theme', 'blankslate_setup');

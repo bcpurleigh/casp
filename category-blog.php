@@ -1,5 +1,5 @@
 <? get_header(); ?>
-<? $per_col = ceil($wp_query->post_count / 4); ?>
+<? $per_col = floor($wp_query->post_count / 4); ?>
 <div class="blog container">
 	<div class="content">
 		<? if (category_description() != ""): ?>

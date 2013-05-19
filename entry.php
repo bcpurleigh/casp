@@ -1,5 +1,7 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-<?= has_post_thumbnail() ? get_the_post_thumbnail(get_the_id(), array(280,280), array('class' => 'post-image')) : ''; ?>
+<? if ( ! is_single()): ?><a href="<? the_permalink(); ?>"><? endif; ?>
+<?= has_post_thumbnail() ? get_the_post_thumbnail(get_the_id(), 'thumbnail', array('class' => 'post-image')) : ''; ?>
+<? if ( ! is_single()): ?></a><? endif; ?>
 <h2 class="post-title"><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h2>
 <div class="posted">
 	<? the_time('F j, Y'); ?><? if (is_single()): ?> | Posted by <? the_author(); ?><? endif; ?>

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><? wp_title(' | ', true, 'right'); ?></title>
     <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=1000">
 
     <link rel="icon" href="<?php bloginfo('template_directory');?>/favicon.png" type="image/x-icon"/>
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php bloginfo('template_directory');?>/icon.144x144.png">

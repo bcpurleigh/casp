@@ -1,7 +1,6 @@
 <? get_header(); ?>
-<div class="container ">
-	<div class="content clearfix">
+<? $title = strtolower(get_the_title()); ?>
+<? if ($title == "data sharing"): ?><div class="container "><div class="content clearfix"><? endif; ?>
 		<?php the_content(); ?>
-	</div>
-</div>
+<? if ($title == "data sharing"): ?></div></div><? endif; ?>
 <?php get_footer(); ?>

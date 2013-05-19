@@ -1,7 +1,7 @@
 <? if (is_home()): ?>
-	<div class="banner">
+	<div class="banner home">
 	<? $featured_id = get_cat_id('featured'); ?>
-	<? $posts = get_posts(array('numberposts' => 4, 'category' => $featured_id)); ?>
+	<? $posts = get_posts(array('numberposts' => 5, 'category' => $featured_id)); ?>
 	<div class="slider container">
 		<div class="dots clearfix">
 			<? for ($i=0;$i<count($posts);$i++): ?>
@@ -11,7 +11,7 @@
 	<? $i = 0; ?>
 	<? foreach ($posts as $post): setup_postdata($post); ?>
 		<? if (has_post_thumbnail()): ?>
-		<? $bg = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'full'); ?>
+		<? $bg = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), array(1000,448)); ?>
 		<? $bg = $bg[0]; ?>
 		<div id="slider-slide-<?= $i++; ?>" class="slide" style="background-image:url(<?= $bg ?>);">
 			<h2><? the_title(); ?></h2>
@@ -19,6 +19,11 @@
 		</div>
 		<? endif; ?>
 	<? endforeach; ?>
+	</div>
+<? elseif (is_search()): ?>
+	<div class="category banner <?= $key ?>">
+	<div class="container">
+		<h1><?= get_search_query() ?></h1>
 	</div>
 <? elseif (is_category()): ?>
 	<?php the_post(); ?>
@@ -38,7 +43,7 @@
 <? elseif (is_single()): ?>
 	<div class="category banner post">
 	<div class="container">
-		<h1>Blog</h1>
+		<h1><? the_category(', ') ?></h1>
 	</div>
 <? endif; ?>
 </div>
