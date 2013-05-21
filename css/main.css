@@ -226,6 +226,7 @@ textarea {
 }
 
 .category.banner.blog { background-image:url(../images/banners/blog.png); }
+.category.banner.search { background-image:url(../images/banners/blog.png); }
 .category.banner.events { background-image:url(../images/banners/events.png); }
 .category.banner.data-sharing { background-image:url(../images/banners/data-sharing.png); }
 .category.banner.forum { background-image:url(../images/banners/forum.png); }
@@ -423,6 +424,87 @@ header nav ul ul {
     font-size:0;   
     border: 0;
     vertical-align: top;
+}
+
+a.advanced-search {
+    display:block;
+    text-align:right;
+    margin-top:6px;
+    margin-right:3px;
+    font-size: 11.56px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: .8;
+    font-family: 'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.category.search + .single .content {
+    padding:31px;
+}
+
+.advanced-search-form {
+    width:50%;
+    display: block;
+    margin:auto;
+    padding:40px;
+    background: #252525;
+}
+
+.advanced-search-form:before {
+    content:'Advanced Search';
+    color: #FFF;
+    font-size: 30.29px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1;
+    font-family: 'TradeGothicBoldCondensed', 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom:30px;
+    display: block;
+}
+
+.advanced-search-form label {
+    width: 40%;
+    display: inline-block;
+    font-family: 'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 2.3;
+    color: #FFF;
+}
+
+.advanced-search-form input[type="text"],
+.advanced-search-form select {
+    width:59%;
+}
+
+.advanced-search-form input[type="text"] {
+    background: #e7e7e7;
+    border: 0;
+    padding: 10px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.advanced-search-form input[type="submit"] {
+    padding: 10px;
+    background-color: #cd2727;
+    color: #FFF;
+    border: 0;
+    margin-top:30px;
+    font-size: 16px;
+    font-weight: normal !important;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    background-image: url(../images/btn-arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 45px;
+    -webkit-appearance: none;
 }
 
 footer {

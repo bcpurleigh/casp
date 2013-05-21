@@ -47,6 +47,10 @@
 				<div id="search-inputs">
 					<input type="text" placeholder="Search" value="<?php the_search_query(); ?>" name="s" id="s"><!--
 					--><input type="submit" id="search-submit" value="Search">
+                    <? $search = get_page_by_title('search'); ?>
+                    <? if ($search): ?>
+                    <br/><a class="advanced-search" href="<?= get_permalink($search); ?>">Advanced Search</a>
+                    <? endif; ?>
 				</div>
 			</form>
 			<nav>
