@@ -219,18 +219,18 @@ textarea {
 
 .category.banner {
     padding:26px 0;
-    background:url(../images/category-banner.png) #000 repeat-x top left;
+    background:url(../images/banners/blog.jpg) #000 repeat-x top left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
 }
 
-.category.banner.blog { background-image:url(../images/banners/blog.png); }
-.category.banner.search { background-image:url(../images/banners/blog.png); }
-.category.banner.events { background-image:url(../images/banners/events.png); }
+.category.banner.blog { background-image:url(../images/banners/blog.jpg); }
+.category.banner.search { background-image:url(../images/banners/blog.jpg); }
+.category.banner.events { background-image:url(../images/banners/events.jpg); }
 .category.banner.data-sharing { background-image:url(../images/banners/data-sharing.png); }
-.category.banner.forum { background-image:url(../images/banners/forum.png); }
-.category.banner.publications { background-image:url(../images/banners/publications.png); }
+.category.banner.forum { background-image:url(../images/banners/forum.jpg); }
+.category.banner.publications { background-image:url(../images/banners/publications.jpg); }
 .category.banner.working-paper-series { background-image:url(../images/banners/working-paper-series.png); }
 
 .banner h1 {
@@ -260,8 +260,8 @@ textarea {
     width:12px;
     height:12px;
     border-radius:7px;
-    border:solid 2px #FFF;
-    background:#FFF;
+    border:solid 2px #e7e7e7;
+    background:#e7e7e7;
     float:left;
     margin-left:10px;
     cursor:pointer;
@@ -332,6 +332,9 @@ textarea {
     background:rgba(0,0,0,.8);
     font-weight:normal;
     font-family:'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 header {
@@ -635,6 +638,8 @@ h2 {
 #masonry .block .post img {
     float:left;
     margin:8px 18px 2px 0;
+    width: 64px;
+    height:auto;
 }
 
 .post .posted {
@@ -680,6 +685,10 @@ h2 {
 
 .blog .columns .column:nth-child(even) {
     width: 142px;
+}
+
+.blog .columns .column:nth-child(4n+1) {
+    clear:left;
 }
 
 .conferences .column,

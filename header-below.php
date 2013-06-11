@@ -1,7 +1,7 @@
 <? if (is_home()): ?>
 	<div class="banner home">
 	<? $featured_id = get_cat_id('featured'); ?>
-	<? $posts = get_posts(array('numberposts' => 5, 'category' => $featured_id)); ?>
+	<? $posts = get_posts(array('numberposts' => 5, 'category' => $featured_id, 'post_status' => array('publish','future'))); ?>
 	<div class="slider container">
 		<div class="dots clearfix">
 			<? for ($i=0;$i<count($posts);$i++): ?>
@@ -14,8 +14,17 @@
 		<? $bg = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), array(1000,448)); ?>
 		<? $bg = $bg[0]; ?>
 		<div id="slider-slide-<?= $i++; ?>" class="slide" style="background-image:url(<?= $bg ?>);">
+			<?
+			$categories = get_the_category();
+			$link_display = 'Read More';
+			if (count($categories) >= 2) {
+				$link_display .= ', ' . ucfirst($categories[1]->cat_name);
+			} elseif (count($categories) == 1) {
+				$link_display .= ', ' . ucfirst($categories[0]->cat_name);
+			}
+			?>
 			<h2><? the_title(); ?></h2>
-			<a href="<? the_permalink(); ?>" class="btn right-arrow">Read More</a>
+			<a href="<? the_permalink(); ?>" class="btn right-arrow"><?= $link_display ?></a>
 		</div>
 		<? endif; ?>
 	<? endforeach; ?>

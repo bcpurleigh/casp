@@ -18,7 +18,7 @@
 				<div class="post clearfix">
 					<h2><a href="<? the_permalink(); ?>"><? the_title(); ?></a></h2>
 					<div class="posted"><? the_time('F j, Y'); ?></div>
-					<?= has_post_thumbnail() ? get_the_post_thumbnail(get_the_id(), array(64,64)) : ''; ?>
+					<?= has_post_thumbnail() ? get_the_post_thumbnail(get_the_id(), 'thumbnail') : ''; ?>
 					<? the_excerpt(); ?>
 				</div>
 				<? endforeach; ?>

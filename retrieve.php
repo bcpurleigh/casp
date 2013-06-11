@@ -1,6 +1,8 @@
 <?
 
-$FORUM_LOCATION = "http://164.177.158.37/caspbb/feed.php";
+$FORUM_LOCATION = "http://cmass.apps01.yorku.ca/forum/feed.php";
+
+$FORUM_EXCERPT_LENGTH = 150;
 
 require 'phpquery/phpquery.php';
 
@@ -73,16 +75,29 @@ function retrieve_bn() {
 }
 
 function retrieve_forum() {
-	global $FORUM_LOCATION;
+	global $FORUM_LOCATION, $FORUM_EXCERPT_LENGTH;
 	try {
 		$url = $FORUM_LOCATION;
 		$contents = file_get_contents($url);
 		$xml = new SimpleXMLElement($contents);
 
+		$max = 4;
+		$i = 0;
+
 		$arr = array();
 		if ($xml) {
 			foreach($xml->entry as $entry) {
 				$desc = strip_tags($entry->content,'<p>');
+
+				//strip crappy phpbb tags
+				$desc = preg_replace("/\&lt\;[^)]+\&gt\;/", '', $desc);
+
+				//excerpt string
+				$l = strpos($desc, " ", $FORUM_EXCERPT_LENGTH);
+				$desc = substr($desc, 0, $l);
+
+				$desc .= ' ...';
+
 				$posted = strtotime($entry->updated);
 				$posted = date('F j, Y', $posted);
 
@@ -92,6 +107,8 @@ function retrieve_forum() {
 					'posted' => $posted,
 					'desc' => $desc
 				);
+
+				if (++$i >= $max) break;
 			}
 		}
 		return $arr;
