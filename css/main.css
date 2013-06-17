@@ -1,3 +1,16 @@
+/**
+phpBB Forum Style overrides
+*/
+.attach-image {
+    max-height: none !important;
+}
+
+.attach-image img {
+    border: none !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
 html,
 button,
 input,
