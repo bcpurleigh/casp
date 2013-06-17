@@ -19,8 +19,6 @@
 			$link_display = 'Read More';
 			if (count($categories) >= 2) {
 				$link_display .= ', ' . ucfirst($categories[1]->cat_name);
-			} elseif (count($categories) == 1) {
-				$link_display .= ', ' . ucfirst($categories[0]->cat_name);
 			}
 			?>
 			<h2><? the_title(); ?></h2>

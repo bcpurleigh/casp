@@ -332,9 +332,8 @@ textarea {
     background:rgba(0,0,0,.8);
     font-weight:normal;
     font-family:'TradeGothicCondensed', 'Helvetica Neue', Arial, sans-serif;
-    max-width: 90%;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    max-width: 80%;
+    white-space: pre-wrap;
 }
 
 header {
