@@ -11,7 +11,7 @@ phpBB Forum Style overrides
     height: auto !important;
 }
 
-.inputbox {
+input.inputbox {
     border: 1px solid #eaeaea !important;
 }
 
