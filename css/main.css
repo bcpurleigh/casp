@@ -11,6 +11,10 @@ phpBB Forum Style overrides
     height: auto !important;
 }
 
+.inputbox {
+    border: 1px solid #eaeaea !important;
+}
+
 html,
 button,
 input,

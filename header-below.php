@@ -17,8 +17,12 @@
 			<?
 			$categories = get_the_category();
 			$link_display = 'Read More';
-			if (count($categories) >= 2) {
-				$link_display .= ', ' . ucfirst($categories[1]->cat_name);
+			foreach($categories as $category) {
+				$cat_name = strtolower($category->cat_name);
+				if ($cat_name != "featured") {
+					$link_display .= ', ' . ucfirst($cat_name);
+					break;
+				}
 			}
 			?>
 			<h2><? the_title(); ?></h2>
@@ -50,7 +54,15 @@
 <? elseif (is_single()): ?>
 	<div class="category banner post">
 	<div class="container">
-		<h1><? the_category(', ') ?></h1>
+		<?
+		$categories = get_the_category();
+		$cat_name = "Blog";
+		foreach($categories as $category) {
+			$cat_name = strtolower($category->cat_name);
+			if ($cat_name != "featured") break;
+		}
+		?>
+		<h1><?= ucfirst($cat_name) ?></h1>
 	</div>
 <? endif; ?>
 </div>
