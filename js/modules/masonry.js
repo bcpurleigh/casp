@@ -6,7 +6,6 @@ define(['jquery', 'components/masonry'], function($) {
 		run: function() {
 			$(document).ready(function() {
 				var container = document.getElementById('masonry');
-
 				if (container) {
 					masonry = new Masonry(container, {
 						columnWidth:317,
@@ -16,6 +15,8 @@ define(['jquery', 'components/masonry'], function($) {
 			});
 		}
 	};
+
+	m.run();
 
 	return m;
 });

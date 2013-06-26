@@ -89,6 +89,4 @@
 	</div>
 </div>
 
-<script type="text/javascript">var _a = _a || []; _a.push(['masonry','run']);</script>
-
 <?php get_footer(); ?>

@@ -61,7 +61,7 @@ requirejs.config({
 //init modernizr
 require(['components/modernizr']);
 
-require(['slider']);
+require(['slider','masonry']);
 
 /**
  * Perform post-initialisation DOM manipulations
